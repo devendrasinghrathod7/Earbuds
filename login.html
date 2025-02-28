@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; background-image: url(img/dev.jpg);
+            background-repeat: repeat;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container .login-btn {
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding: 12px;
+            background-color: #060606;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container .login-btn:hover {
+            background-color: #252525;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="index.html" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <!-- Anchor tag acting as a login button -->
+            <a href="index.html" class="login-btn">Login</a>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
